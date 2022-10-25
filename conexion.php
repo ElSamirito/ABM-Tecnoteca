@@ -4,7 +4,7 @@
         $user = "root";
         $pass = "";
         
-        $bd = "registros - tecnoteca";
+        $bd = "tecnoteca";
 
         $connect = mysqli_connect($host, $user, $pass);
 

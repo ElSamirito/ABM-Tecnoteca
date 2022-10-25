@@ -1,0 +1,139 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(199, 212, 212);
+}
+
+header{
+    background-color: #4E7B82;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+h1{
+    margin: 0;
+}
+
+#tecnoteca{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+#sanfco{
+    font-weight: 500;
+}
+
+/*INICIO AÑADIR USUARIO*/
+
+h2{
+    margin-top: 35px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #4E7B82;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+#box-campos{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.campos{
+    width: 250px;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(119, 119, 119);
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 3px;
+}
+
+#boton-registro{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: auto;
+    color: azure;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 5px; 
+    background-color: #4E7B82;
+    border-style: unset;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+#boton-registro:hover{ 
+    color: #4E7B82;
+    background-color: azure;
+}
+
+/*FIN AÑADIR USUARIO*/
+
+/*INICIO USUARIOS REGISTRADOS*/
+
+#box-columnas-id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.columnas-id{
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    background-color: #4E7B82;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+#box-columnas-id tbody{
+    font-family: 'Montserrat', sans-serif;
+    color: #3b3b3b;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.boton-tabla a{
+    background-color: #4E7B82;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: azure;
+    padding: 2.5px;
+}
+
+.boton-tabla a:hover {
+    background-color: azure;
+    color: #4E7B82;  font-family: 'Montserrat', sans-serif; text-decoration: none;
+}
+
+/*FIN USUARIOS REGISTRADOS*/
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    color: #4E7B82;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+}
