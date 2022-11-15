@@ -1,5 +1,5 @@
 <?php
-    include('conexion.php');
+    include('./Funciones/conexion.php');
 
     $con = conbd();
 
@@ -14,24 +14,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-
-    <title>Tecnoteca - ABM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <title>Tecnoteca ABM</title>
 </head>
 <body>
     <header>
-        <h1 id="tecnoteca">TECNOTECA</h1> 
-        <h1 id="sanfco">San Francisco - Gestión</h1>
+        <h1>tecnoteca</h1> 
+        <h1>san francisco</h1>
     </header>
     <div id="box-campos"> 
-        <form action="add-registro.php" method="POST">
-            <h2>AÑADIR USUARIO</h2>
+        <form action="./Funciones/add-registro.php" method="POST">
+            <h2>añadir usuario</h2>
 
             <input type="text" name="nombre" placeholder="Nombre" class="campos">
             <input type="text" name="apellido" placeholder="Apellido" class="campos">
             <input type="text" name="dni" placeholder="DNI" class="campos">
-            <select name="zona" placeholder="Zona a Utilizar" class="campos">
+            <select name="zona" class="campos">
                 <option value="Compus">Computadoras</option>
                 <option value="Audi">Auditorio</option>
                 <option value="VR">Lentes VR</option>
@@ -39,24 +40,24 @@
             <input type="datetime-local" name="fecha" placeholder="Fecha y Hora" class="campos">
             <input type="tel" name="tel" pattern="[0-9]{4}-[0-9]{6}" placeholder="Teléfono" class="campos">
 
-            <input type="submit" value="REGISTRAR" id="boton-registro">
+            <input type="submit" value="Registrar" class="campos btn">
         </form>
     </div>
 
     <div>
-        <h2>USUARIOS REGISTRADOS</h2>
+        <h2>usuarios registrados</h2>
         
-        <table id="box-columnas-id">
-            
+        <table id="colum-box">
+
             <tbody>
                 <tr>
-                    <th class="columnas-id">ID</th>
-                    <th class="columnas-id">Nombre</th>
-                    <th class="columnas-id">Apellido</th>
-                    <th class="columnas-id">DNI</th>
-                    <th class="columnas-id">Zona</th>
-                    <th class="columnas-id">Fecha y Hora</th>
-                    <th class="columnas-id">Teléfono</th>
+                    <th class="column-id">id</th>
+                    <th class="column-id">nombre</th>
+                    <th class="column-id">apellido</th>
+                    <th class="column-id">dni</th>
+                    <th class="column-id">zona</th>
+                    <th class="column-id">fecha y hora</th>
+                    <th class="column-id">teléfono</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -70,8 +71,8 @@
                     <th> <?= $row['zone'] ?> </th>
                     <th> <?= $row['date'] ?> </th>
                     <th> <?= $row['phone'] ?> </th>
-                    <th class="boton-tabla"><a href="actualizar.php?id=<?= $row['id'] ?>" style="text-decoration:none">editar</a></th>
-                    <th class="boton-tabla"><a href="eliminar.php?id=<?= $row['id'] ?>" style="text-decoration:none">eliminar</a></th>
+                    <th><a class="btn" href="./Funciones/actualizar.php?id=<?= $row['id'] ?>" >editar</a></th>
+                    <th><a class="btn" href="./Funciones/eliminar.php?id=<?= $row['id'] ?>" >eliminar</a></th>
                 </tr>
                 
                 <?php endwhile; ?>

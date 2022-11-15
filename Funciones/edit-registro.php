@@ -1,5 +1,5 @@
 <?php
-    include('conexion.php');
+    include('./conexion.php');
 
     $con = conbd();
     
@@ -16,6 +16,6 @@
     $query = mysqli_query($con, $sql);
 
     if ($query) {
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
 ?>
